@@ -4,7 +4,7 @@ type=mysql
 master=server03
 slave=server03
 init=init
-prefix=cp
+prefix=pa_
 charset=utf8
 
 [init]
@@ -21,6 +21,6 @@ dsn="host=yiiiot.com;dbname=cp;port=3306;"
 user=cpread
 passwd=cpread
 [server03]
-dsn="host=localhost;dbname=cp;port=3306;"
+dsn="host=192.168.1.63;dbname=test;port=3306;"
 user=root
-passwd=
+passwd=zhubajie

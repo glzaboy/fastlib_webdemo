@@ -1,0 +1,13 @@
+{
+  "name" : "web.git",
+  "require" : {
+    "glzaboy/fastlib" : "dev-master"
+  },
+  "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packagist.org/"
+  } ],
+  "autoload":{
+  	"psr-4":{"page\\":"page"}
+  }
+}

@@ -8,8 +8,9 @@ class index extends \fl\base\page
 
     function dohome($pathcmd)
     {
-        $l=new QueryBuilder(new connect('cp'));
-        $l->select('cp', $orderby, $groupby);
+        echo "afsf";
+//         $l=new QueryBuilder(new connect('cp'));
+//         $l->select('cp', $orderby, $groupby);
     }
 
 }

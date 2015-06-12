@@ -8,7 +8,7 @@ class index extends \fl\base\page
 
     function dohome($pathcmd)
     {
-        echo date('Y-m-d').date('H:i:s');
+        echo date('Y-m-d').date('H:i:s'); exit;
 //         $l=new QueryBuilder(new connect('cp'));
 //         $l->select('cp', $orderby, $groupby);
     }

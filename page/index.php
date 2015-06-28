@@ -4,25 +4,34 @@ namespace page;
 use fl\db\QueryBuilder;
 use fl\db\connect;
 use fl\db\transaction;
+
 class index extends \fl\base\page
 {
 
     function dohome($pathcmd)
     {
-        echo date('Y-m-d H:i:s');
-        try{
-            $con=new connect('yiiiot');
-            $l=$con->getQueryerBuilder();
-            print_r($l->gettables());
-            $data=$l->select('user','','*','order by user_id desc');
-            $l->update('user',array('showname'=>"飞雪欢春"),array('user_id=3'));
-            $l->delete('user',array('user_id'=>2));
-            foreach ($data as $d){
+        try {
+            $con = new connect('yiiiot');
+            $l = $con->getQueryerBuilder();
+            $condition = array();
+            $condition['user.user_id'] = 1;
+            $leftjoin = array();
+            $leftjoin['usercfg'] = array(
+                'left',
+                'usercfg.user_id' => 'user.user_id'
+            );
+            $item=array();
+            $item['id']='user.user_id';
+            $item['id2']='usercfg.user_id';
+
+            $data = $l->select('user', $condition, $item, 'order by yi_user.user_id desc', '', $leftjoin);
+            // $l->update('user',array('showname'=>"飞雪欢春"),array('user_id=3'));
+            // $l->delete('user',array('user_id'=>2));
+            foreach ($data as $d) {
                 print_r($d);
             }
-        }catch (\Exception $e){
+        } catch (\Exception $e) {
             print_r($e);
         }
     }
-
 }

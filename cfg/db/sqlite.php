@@ -1,6 +1,6 @@
 <?php die("HTTP 403");?>
 [main]
-type=mysql
+type=sqlite
 master=server03
 slave=server03
 init=init
@@ -17,7 +17,7 @@ user=glzaboy
 passwd="1984cxtG"
 
 [server03]
-dsn="host=localhost;dbname=yiiiot;port=3306;"
+dsn="sqlite.sql3"
 user=root
 passwd=""
 

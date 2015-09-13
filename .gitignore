@@ -18,6 +18,6 @@ local.properties
 .buildpath
 *.swp
 *.tmp
-vendor
+#vendor
 tmp
 composer.lock

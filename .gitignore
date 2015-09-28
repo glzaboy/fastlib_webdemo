@@ -21,3 +21,4 @@ local.properties
 #vendor
 tmp
 composer.lock
+/vendor

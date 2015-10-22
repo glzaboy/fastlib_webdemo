@@ -9,4 +9,7 @@ class index extends \fl\base\page
     {
         return $this->render(array());
     }
+    function dotest($aram) {
+        
+    }
 }

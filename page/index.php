@@ -7,9 +7,6 @@ class index extends \fl\base\page
 
     function dohome($pathcmd)
     {
-        return $this->render(array());
-    }
-    function dotest($aram) {
-        
+        return $this->getjson(array('fsfs'=>'fsdfds','你是我的小苹果'),JSON_UNESCAPED_UNICODE,'ts');
     }
 }

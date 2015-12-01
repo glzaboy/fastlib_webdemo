@@ -21,6 +21,6 @@ dsn="host=yiiiot.com;dbname=cp;port=3306;"
 user=cpread
 passwd=cpread
 [server03]
-dsn="host=192.168.1.63;dbname=test;port=3306;"
+dsn="host=127.0.0.1;dbname=test;port=3306;"
 user=root
-passwd=zhubajie
+passwd=

@@ -14,7 +14,7 @@ charset=utf8
 [server01]
 dsn="host=yiiiot.com;dbname=yiiiot;port=3306"
 user=glzaboy
-passwd="1984cxtG"
+passwd="xxx"
 
 [server03]
 dsn="sqlite.sql3"

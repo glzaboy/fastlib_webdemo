@@ -22,6 +22,6 @@ user=cpread
 passwd="xxx"
 
 [server03]
-dsn="host=192.168.1.63;dbname=zhubajie_cp;port=3306;"
+dsn="host=192.168.1.63;dbname=xxx_xxx;port=3306;"
 user=root
 passwd=xxx

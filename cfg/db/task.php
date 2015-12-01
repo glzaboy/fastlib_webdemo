@@ -4,7 +4,7 @@ type=mysql
 master=server03
 slave=server03
 init=init
-prefix=yi_
+prefix=mk_
 charset=utf8
 
 [init]
@@ -17,9 +17,9 @@ user=glzaboy
 passwd="1984cxtG"
 
 [server03]
-dsn="host=localhost;dbname=yiiiot;port=3306;"
+dsn="host=192.168.1.63;dbname=xxx_xxx;port=3306;"
 user=root
-passwd=""
+passwd="xxx"
 
 
 

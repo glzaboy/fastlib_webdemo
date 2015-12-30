@@ -1,7 +1,7 @@
 <?php die("HTTP 403");?>
 [main]
 type=mysql
-master=server03
+master=server04
 slave=server04
 init=init
 prefix=wp_
@@ -17,5 +17,5 @@ user=root
 passwd=
 [server04]
 dsn="host=127.0.0.1;dbname=web;port=3306;"
-user=root
-passwd=
+user=adminlyrVcmF
+passwd=aYBKzcYQHuzC

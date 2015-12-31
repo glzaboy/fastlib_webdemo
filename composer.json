@@ -7,6 +7,9 @@
     "type" : "composer",
     "url" : "https://packagist.org/"
   } ],
-  "autoload":{
+  "autoload" : {
+    "psr-4" : {
+      "app\\" : "app/"
+    }
   }
 }

@@ -1,10 +1,10 @@
 <?php die("HTTP 403");?>
 [main]
 type=mysql
-master=server04
-slave=server04
+master=server03
+slave=server03
 init=init
-prefix=wp_
+prefix=wx_
 charset=utf8
 
 [init]
@@ -12,10 +12,10 @@ charset=utf8
 1="SET time_zone='+8:00' ;"
 
 [server03]
-dsn="host=127.0.0.1;dbname=web;port=3306;"
+dsn="host=127.0.0.1;dbname=wx;port=3306;"
 user=root
 passwd=
 [server04]
-dsn="host=127.0.0.1;dbname=web;port=3306;"
+dsn="host=localhost;dbname=wx;port=3306;"
 user=adminlyrVcmF
 passwd=aYBKzcYQHuzC

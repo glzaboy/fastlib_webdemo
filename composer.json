@@ -11,5 +11,8 @@
     "psr-4" : {
       "app\\" : "app/"
     }
+  },
+  "config": {
+       "optimize-autoloader": true
   }
 }
